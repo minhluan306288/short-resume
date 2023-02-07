@@ -1,0 +1,106 @@
+@import (css) url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a82bd url("../images/main_bg.png") no-repeat fixed top;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  background-size: cover;
+  backdrop-filter: blur(64px);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: #141414c2;
+  border-radius: 15px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 0 28px #0000005e;
+}
+
+.container-content {
+  .header {
+    text-align: center;
+    &__cover {
+      img {
+        width: 100%;
+      }
+    }
+    &__avatar {
+      width: 190px;
+      border: 7px solid #ffffff5c;
+      border-radius: 50%;
+      margin: -105px auto auto auto;
+      box-shadow: 0 0 15px #333333c9;
+    }
+  }
+  .body-content {
+    margin-bottom: 25px;
+    .info {
+        padding: 10px 15px;
+        text-align: center;
+        &__title {
+          font-weight: 300;
+          font-size: 15px;
+          margin: 0;
+        }
+        &__name {
+          margin: 5px 0;
+        }
+        &__description {
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.814);
+          font-weight: 200;
+        }
+
+        &__actions{
+          margin-top: 20px;
+        }
+      }
+  }
+}
+
+.button {
+  color: #fff;
+  background-color: #333;
+  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+  display: inline-block;
+  padding: 0.8em 2.1em;
+  font-size: 1em;
+  line-height: 1.2;
+  border: 2px solid #007ced;
+  text-shadow: none;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 10px -8px rgb(0 0 0 / 22%);
+  &:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  &.normal{
+    margin-left: 15px;
+    border-color: white;
+    &:hover {
+      border-color: #0062cc;
+    }
+  }
+}
